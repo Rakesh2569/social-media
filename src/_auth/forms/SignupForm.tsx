@@ -51,7 +51,7 @@ const SignupForm = () => {
       if (!session) {
         toast({ title: "Something went wrong. Please login your new account", });
         
-        navigate("/sign-in");
+        navigate("/LandingPage");
         
         return;
       }
@@ -81,7 +81,7 @@ const SignupForm = () => {
           Create a new account
         </h2>
         <p className="text-light-3 small-medium md:base-regular mt-2">
-          To use snapgram, Please enter your details
+          What Are You Waiting For Just SignUp Scroll And Skill
         </p>
 
         <form

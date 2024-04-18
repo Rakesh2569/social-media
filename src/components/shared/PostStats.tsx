@@ -17,7 +17,9 @@ type PostStatsProps = {
 
 const PostStats = ({ post, userId }: PostStatsProps) => {
   const location = useLocation();
-  const likesList = post.likes.map((user: Models.Document) => user.$id);
+
+  // Ensure that post.likes is an array before mapping
+  const likesList = Array.isArray(post.likes) ? post.likes.map((user: Models.Document) => user?.$id) : [];
 
   const [likes, setLikes] = useState<string[]>(likesList);
   const [isSaved, setIsSaved] = useState(false);
@@ -28,8 +30,9 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
 
   const { data: currentUser } = useGetCurrentUser();
 
-  const savedPostRecord = currentUser?.save.find(
-    (record: Models.Document) => record.post.$id === post.$id
+  // Check if currentUser and currentUser.save are defined before accessing properties
+  const savedPostRecord = currentUser?.save?.find(
+    (record: Models.Document) => record?.post?.$id === post.$id
   );
 
   useEffect(() => {
@@ -60,7 +63,7 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
 
     if (savedPostRecord) {
       setIsSaved(false);
-      return deleteSavePost(savedPostRecord.$id);
+      return deleteSavePost(savedPostRecord?.$id);
     }
 
     savePost({ userId: userId, postId: post.$id });
@@ -73,7 +76,8 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
 
   return (
     <div
-      className={`flex justify-between items-center z-20 ${containerStyles}`}>
+      className={`flex justify-between items-center z-20 ${containerStyles}`}
+    >
       <div className="flex gap-2 mr-5">
         <img
           src={`${

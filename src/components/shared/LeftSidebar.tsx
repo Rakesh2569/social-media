@@ -21,7 +21,7 @@ const LeftSidebar = () => {
     signOut();
     setIsAuthenticated(false);
     setUser(INITIAL_USER);
-    navigate("/sign-in");
+    navigate("/LandingPage");
   };
 
   return (
@@ -31,7 +31,7 @@ const LeftSidebar = () => {
           <img
             src="/assets/images/logo.svg"
             alt="logo"
-            width={170}
+            width={270}
             height={36}
           />
         </Link>

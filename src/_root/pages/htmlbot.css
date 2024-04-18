@@ -1,0 +1,113 @@
+/* Discuss.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chat-container {
+    width: 250%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .you {
+    align-self: flex-end;
+    background-color: #ffffff;
+    border-radius:13px;
+    color: black;
+  }
+  
+  .sender {
+    background-color: rgba(135,126,255,255);
+    color: black;
+    border-radius: 13px;
+    padding-left: 5px;
+    align-items: flex-start;
+    font-weight: 700;
+  }
+  
+  .text {
+    padding: 15px;
+    font-size: 17px;
+    
+  }
+  
+  .message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    border-radius: 30px;
+  }
+  
+  .message-input input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 30px;
+  }
+  
+  .message-input button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .message-input button:hover {
+    background-color: #0056b3;
+  }
+  /* Discuss.css */
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .chat-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    height: 600px; /* Set a fixed height for the chat area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-radius: 30px;
+  }
+  
+  .messages {
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Add margin to separate from chat area */
+  }
+  
+  .input-field {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .input-button {
+    min-width: 100px;
+  }
+  

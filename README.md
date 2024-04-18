@@ -142,12 +142,12 @@ export const sidebarLinks = [
   {
     imgURL: "/assets/icons/home.svg",
     route: "/",
-    label: "Home",
+    label: "StudySpace",
   },
   {
     imgURL: "/assets/icons/wallpaper.svg",
     route: "/explore",
-    label: "Explore",
+    label: "ExploreEd",
   },
   {
     imgURL: "/assets/icons/people.svg",
@@ -157,7 +157,7 @@ export const sidebarLinks = [
   {
     imgURL: "/assets/icons/bookmark.svg",
     route: "/saved",
-    label: "Saved",
+    label: "StudyVault",
   },
   {
     imgURL: "/assets/icons/gallery-add.svg",
@@ -762,3 +762,4 @@ And if you're hungry for more than just a course and want to understand how we l
 </a>
 
 #
+"# final" 

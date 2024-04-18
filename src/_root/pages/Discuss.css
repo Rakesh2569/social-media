@@ -1,0 +1,48 @@
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    margin: 30px 20px 20px 20px;  }
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: rgba(135, 126, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    transition: all 0.5s;
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center; /* Align items horizontally in the center */
+  }
+  
