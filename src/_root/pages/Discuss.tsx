@@ -1,8 +1,6 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import "./discuss.css";
-import Htmlbot from './Htmlbot';
-
 
 
 const Discuss = () => {
