@@ -1,6 +1,5 @@
 
 import { Link } from 'react-router-dom';
-import "./discuss.css";
 
 
 const Discuss = () => {
