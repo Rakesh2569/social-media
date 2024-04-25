@@ -1,5 +1,4 @@
-
-  .containeer {
+.containeer {
     width: 70px;
     height: 70px;
   
@@ -16,14 +15,43 @@
       margin: 8% 0% 2% 19%; /* Adjust margin for smaller devices */
     }
   }
-  
+/* Set background image for landing page */
+.landing-page {
+  background-image: url('E:\Desktop\saraswatigrandhalaya\social-media\src\_root\pages\bg.jpg');
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  width: 10000px;
+  height: 1300px;
+}
+
+/* Hide background image for small screens */
+@media (max-width: 768px) {
+  .landing-page {
+    background-image: none;
+  }
+}
+/* Set background image for landing page */
+.landing-page {
+  background-image: url('E:\Desktop\saraswatigrandhalaya\social-media\src\_root\pages\bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Hide background image for small screens */
+@media (max-width: 768px) {
+  .landing-page {
+    background-image: none;
+  }
+}
+
+
   
   *{
       font-family: "Montserrat", sans-serif;
     }
   
-  .card{
-      margin: 4% 0% 0% 5%;
+  .cardd{
+      margin: 0% 0% 0% 5%;
     }
     
     .paraaa{
@@ -119,7 +147,7 @@
     
       position: relative;
     }
-    .ag-courses-item_link:hover,
+    .ag-courses-item_link,
     .ag-courses-item_link:hover .ag-courses-item_date {
       text-decoration: none;
       color: #ff0000;
@@ -166,7 +194,6 @@
       position: absolute;
       top: -75px;
       right: -75px;
-    
       border-radius: 50%;
     
       -webkit-transition: all .5s ease;
@@ -276,7 +303,7 @@
          line-height: auto;
          overflow: hidden;
    
-         /*line*/
+         /line/
          &:before {
             content: "";
             background-color: #f38181;
@@ -289,7 +316,7 @@
             border-radius: 50px;
             transition: all 0.3s ease-in-out;
          }
-         /*arrow*/
+         /arrow/
          &:after {
             content: "";
             width: 15px;
@@ -372,7 +399,7 @@
   
   .contr {
     text-align: center;  /* Default styles */
-    margin: 3% auto 2%; /* Default margin, centered horizontally */
+    margin: 2% 2% 3% 3%; /* Default margin, centered horizontally */
   
     /* Media query for screens smaller than or equal to 768px */
     @media screen and (max-width: 768px) {
@@ -416,5 +443,3 @@
     box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
     background-color: rgba(104, 85, 224, 1);
   }
-  
-  
