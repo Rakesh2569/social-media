@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 
 const LandingPage: React.FC = () => {
   return (
+    <body className="landing-page">
     <div>
-      <div className="containeer">
-        <img src="/assets/icons/mlogo1.png" alt="Logo" className="logo" />
-      </div>
 
       <div className="contr">
         <div>
@@ -17,7 +15,7 @@ const LandingPage: React.FC = () => {
       </div>
 
       <div className='top'>
-        <div className="card">
+        <div className="cardd">
           <h1>Hey Aspirant, Welcome To <span>SaraswatiGrandhalayam</span>
             <div className="scroller">
               <span>Introducing 
@@ -40,7 +38,7 @@ const LandingPage: React.FC = () => {
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg" />
               <div className="ag-courses-item_title">
-                Explore Grandhalayas Import knowledge
+                Ask AI clear & Your Doubts
               </div>
             </a>
           </div>
@@ -53,15 +51,24 @@ const LandingPage: React.FC = () => {
             </a>
           </div>
 
+          <div className="ag-courses_item" style={{ backgroundColor: "red" }}>
+  <a href="#" className="ag-courses-item_link">
+    <div className="ag-courses-item_b" ></div>
+    <div className="ag-courses-item_title">
+      Share your Knowledge To Others
+    </div>
+  </a>
+</div>
+
+
           <div className="ag-courses_item">
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg" />
               <div className="ag-courses-item_title">
-                Share your Knowledge To Others
+              Explore Grandhalayas Import knowledge
               </div>
             </a>
           </div>
-
           <div className="ag-courses_item">
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg" />
@@ -74,9 +81,28 @@ const LandingPage: React.FC = () => {
             <a href="#" className="ag-courses-item_link">
               <div className="ag-courses-item_bg" />
               <div className="ag-courses-item_title">
+                Find Your College Materials With In A Minute
+              </div>
+            </a>
+          </div>
+          <div className="ag-courses_item">
+            <a href="#" className="ag-courses-item_link">
+              <div className="ag-courses-item_bg" />
+              <div className="ag-courses-item_title">
+                With Advanced Search And Study Vault
+              </div>
+            </a>
+          </div>
+
+          <div className="ag-courses_item">
+            <a href="#" className="ag-courses-item_link">
+              <div className="ag-courses-item_bg" />
+              <div className="ag-courses-item_title">
                 Find the resources that fit your goals!
               </div>
             </a>
+
+            
           </div>
         </div>
       </div>
@@ -87,6 +113,7 @@ const LandingPage: React.FC = () => {
         </div></Link>
       </center>
     </div>
+    </body>
   );
 }
 
