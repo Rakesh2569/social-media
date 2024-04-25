@@ -17,7 +17,7 @@
   }
 /* Set background image for landing page */
 .landing-page {
-  background-image: url('src\_root\pagesbg.jpg');
+  background-image: url('bg.jpg');
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image from repeating */
   width: 10000px;
